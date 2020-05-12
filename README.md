@@ -7,21 +7,7 @@ Vietnamese Text Classification
 python predict.py -i <filename document>
 ```
 ------
-## Build lại chương trình 
 
-- Tạo thư mục dataset và features : 
-```
-./mkdir.sh
-```
-#### Xây dựng dữ liệu & Tiền xử lý
-```
-python preProcessData.py
-```
-- Dữ liệu tiền xử lý và lưu trong thư mục  processsed_data 
-- Trích chọn đặc trưng đưa vào thư mục feature_extraction
+## BUILD DATA
 
-### Chạy chương trình train : 
-```
-python main.py
-```
-- File model lưu trong thư mục trained_model
+-- WORKING --
