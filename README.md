@@ -67,14 +67,14 @@ Hiện tại mới build 2 nhãn: **Nhà Hàng** và **Khách sạn**.
 
 ## 7. Build:
 
-## Chương trình phân loại 
+### Chương trình phân loại 
 - Chạy chương trình phân loại 1 văn bản bất kì (model đã tồn tại trong train_model): 
 ```
 python predict.py -i <filename document>
 ```
 ------
 
-## BUILD DATA
+### BUILD DATA
 
 -- WORKING --
 
@@ -90,7 +90,7 @@ python predict.py -i <filename document>
     Nha Hang       0.99      0.95      0.97       184
  Quan Ca Phe       1.00      0.99      0.99       254
     Sieu Thi       1.00      0.94      0.97       654
-    
+
    micro avg       0.98      0.98      0.98      4085
    macro avg       0.98      0.98      0.98      4085
 weighted avg       0.98      0.98      0.98      4085
