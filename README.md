@@ -32,11 +32,11 @@ Chỉ mới thực hiện phần 1. Quy trình xử lý như sau:
 
 * Bước training: quy trình thực hiện
 
-![](1.png)
+![](image/1.png)
 
 * Bước dự đoán:
 
-![](2.png)
+![](image/2.png)
 
 Khi triển khai lên server chính, chỉ triển khai mỗi bước dự đoán, model sẽ được train sẵn từ dưới local.
 
@@ -44,7 +44,7 @@ Khi triển khai lên server chính, chỉ triển khai mỗi bước dự đoá
 
 Hiện tại mới build 2 nhãn: **Nhà Hàng** và **Khách sạn**.
 
-![](3.png) ![](4.png)
+![](image/3.png) ![](image/4.png)
 
 Độ chính xác hiện tại là 100%. Tuy nhiên con số này chưa đúng hoàn toàn vì data dùng để train và test chưa hoàn thiện (còn ít).
 
