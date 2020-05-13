@@ -77,3 +77,21 @@ python predict.py -i <filename document>
 ## BUILD DATA
 
 -- WORKING --
+
+## 8. Kết quả:
+
+```C
+              precision    recall  f1-score   support
+
+         ATM       1.00      0.99      1.00       364
+    Buu Dien       0.99      0.99      0.99       642
+   Khach San       0.88      1.00      0.93       435
+   Ngan Hang       1.00      0.99      0.99      1552
+    Nha Hang       0.99      0.95      0.97       184
+ Quan Ca Phe       1.00      0.99      0.99       254
+    Sieu Thi       1.00      0.94      0.97       654
+    
+   micro avg       0.98      0.98      0.98      4085
+   macro avg       0.98      0.98      0.98      4085
+weighted avg       0.98      0.98      0.98      4085
+```
