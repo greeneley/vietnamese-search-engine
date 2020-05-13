@@ -17,7 +17,7 @@ Vietnamese Text Classification
 Sau đó truyền 2 tham số: ***Loại địa điểm*** và **lat,long** vào API Autocomplete (đã có sẵn trong public API Viettel Maps) như sau:
 
 ```python
-'https://api.viettelmaps.com.vn:8080/gateway/searching/v1/place-api/autocomplete?input='+Loại địa điểm+'ca&center='+lat,long+'&access_token=YOUR_TOKEN_VALUE'
+'https://api.viettelmaps.com.vn:8080/gateway/searching/v1/place-api/autocomplete?input='+Loại địa điểm+'&center='+lat,long+'&access_token=YOUR_TOKEN_VALUE'
 ```
 
 ## 3. Điều kiện đảm bảo đầu vào và đầu ra:
@@ -51,8 +51,17 @@ Hiện tại mới build 2 nhãn: **Nhà Hàng** và **Khách sạn**.
   
 ## 6. Công việc tiếp theo:
 
-- [ ] Tiếp tục Xây dựng data dựa theo 8 nhãn ở trên (SEO keyword).
-- [ ] Tiến hành build lại dựa trên data bổ sung. 
+- [x] Tiếp tục Xây dựng data dựa theo 8 nhãn ở trên (SEO keyword):
+  - [x] Nhà hàng
+  - [x] Khách sạn
+  - [x] Quán Cà Phê
+  - [x] ATM
+  - [x] Siêu thị
+  - [x] Ăn Vặt, vỉa hè
+  - [x] Ngân hàng
+  - [x] Bưu điên
+- [x] Tiến hành build lại dựa trên data bổ sung.
+- [ ] Clean data train. 
 - [ ] Thực hiện phần 2. Phần này chỉ thực hiện 1 bước là phân loại từ loại của câu rồi trích loại "danh từ riêng". Ví dụ: "Tìm quán ăn ở Lê Đình Lý, Đà Nẵng" thì cụm từ "Lê Đình Lý, Đà Nẵng" là cụm danh từ riêng. Trích xuất cụm này rồi bỏ vào 1 API public của Viettel Maps sẽ nhận được tọa độ tâm lat,long. Còn nếu không có tên riêng gì trong text nhập vào thì mặc định là lat,long của người sử dụng.
 
 

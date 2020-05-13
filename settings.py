@@ -10,3 +10,51 @@ VECTOR_EMBEDDING = os.path.join(DIR_PATH, 'vector_embedding/vector_embedding_ful
 STOP_WORDS = os.path.join(DIR_PATH, 'stopwords-nlp-vi.txt')
 SPECIAL_CHARACTER = '0123456789%@$.,=+-!;/()*"&^:#|\n\t\''
 DICTIONARY_PATH = 'dictionary.txt'
+
+
+# ======= KHACH SAN =======
+# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/khachsan.txt')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Khach San')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Khach San')
+
+# ======= NHA HANG ========
+
+# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/nhahang.txt')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Nha Hang')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Nha Hang')
+
+# ======= Quan Ca Phe ========
+
+# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/quancaphe.txt')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Quan Ca Phe')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Quan Ca Phe')
+
+# ======= ATM ========
+
+# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/atm.txt')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/ATM')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/ATM')
+
+# ======= Siêu thị ========
+
+# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/sieuthi.txt')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Sieu Thi')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Sieu Thi')
+
+# ======= Ăn vặt, vỉa hè ========
+
+# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/anvat.txt')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/An Vat Via He')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/An Vat Via He')
+
+# ======= Ngân hàng ========
+
+# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/nganhang.txt')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Ngan Hang')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Ngan Hang')
+
+# ======= Bưu điện ========
+
+DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/buudien.txt')
+DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Buu Dien')
+DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Buu Dien')
