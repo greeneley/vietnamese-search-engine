@@ -70,8 +70,7 @@ class FeatureExtraction(object):
         self.__load_dictionary()
         vec = self.dictionary.doc2bow(words)
         dense = list(matutils.corpus2dense(
-            [vec], num_terms=len(self.dictionary)).T[0])
-        print(dense)
+            [vec], num_terms=len(self.dictionary)).T[0])    
         return dense
 
     def get_data_and_label_tfidf(self):
