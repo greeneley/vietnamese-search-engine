@@ -61,8 +61,8 @@ Hiện tại mới build 2 nhãn: **Nhà Hàng** và **Khách sạn**.
   - [x] Ngân hàng
   - [x] Bưu điên
 - [x] Tiến hành build lại dựa trên data bổ sung.
-- [ ] Clean data train. 
-- [ ] Thực hiện phần 2. Phần này chỉ thực hiện 1 bước là phân loại từ loại của câu rồi trích loại "danh từ riêng". Ví dụ: "Tìm quán ăn ở Lê Đình Lý, Đà Nẵng" thì cụm từ "Lê Đình Lý, Đà Nẵng" là cụm danh từ riêng. Trích xuất cụm này rồi bỏ vào 1 API public của Viettel Maps sẽ nhận được tọa độ tâm lat,long. Còn nếu không có tên riêng gì trong text nhập vào thì mặc định là lat,long của người sử dụng.
+- [x] Clean data train. 
+- [x] Thực hiện phần 2. Phần này chỉ thực hiện 1 bước là phân loại từ loại của câu rồi trích loại "danh từ riêng". Ví dụ: "Tìm quán ăn ở Lê Đình Lý, Đà Nẵng" thì cụm từ "Lê Đình Lý, Đà Nẵng" là cụm danh từ riêng. Trích xuất cụm này rồi bỏ vào 1 API public của Viettel Maps sẽ nhận được tọa độ tâm lat,long. Còn nếu không có tên riêng gì trong text nhập vào thì mặc định là lat,long của người sử dụng.
 
 
 ## 7. Build:
