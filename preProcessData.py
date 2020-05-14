@@ -109,8 +109,8 @@ if __name__ == '__main__':
     # Feature Extraction
     print('Featuring Extraction... '),  str(datetime.now())
     # Bow
-    # features_train, labels_train = FeatureExtraction(data=json_train).get_data_and_label_bow()
-    # features_test, labels_test = FeatureExtraction(data=json_test).get_data_and_label_bow()
+    features_train, labels_train = FeatureExtraction(data=json_train).get_data_and_label_bow()
+    features_test, labels_test = FeatureExtraction(data=json_test).get_data_and_label_bow()
 
     # tf-idf
     features_train, labels_train = FeatureExtraction(
