@@ -11,23 +11,23 @@ STOP_WORDS = os.path.join(DIR_PATH, 'stopwords-nlp-vi.txt')
 SPECIAL_CHARACTER = '0123456789%@$.,=+-!;/()*"&^:#|\n\t\''
 DICTIONARY_PATH = 'dictionary.txt'
 TOKEN = 'f68f98d802ba6c0a60ee9dc44c47f48c'
-
-# ======= KHACH SAN =======
+# THRESHOLD = 0.80
+# ======= Khách Sạn =======
 # DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/khachsan.txt')
 # DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Khach San')
-# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Khach San')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Khách Sạn')
 
 # ======= NHA HANG ========
 
 # DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/nhahang.txt')
-# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Nha Hang')
-# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Nha Hang')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Nhà Hàng')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Nhà Hàng')
 
-# ======= Quan Ca Phe ========
+# ======= Quán Cà Phê ========
 
 # DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/quancaphe.txt')
-# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Quan Ca Phe')
-# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Quan Ca Phe')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Quán Cà Phê')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Quán Cà Phê')
 
 # ======= ATM ========
 
@@ -38,23 +38,23 @@ TOKEN = 'f68f98d802ba6c0a60ee9dc44c47f48c'
 # ======= Siêu thị ========
 
 # DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/sieuthi.txt')
-# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Sieu Thi')
-# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Sieu Thi')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Siêu Thị')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Siêu Thị')
 
 # ======= Ăn vặt, vỉa hè ========
 
-# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/anvat.txt')
-# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/An Vat Via He')
-# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/An Vat Via He')
+DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/anvat.txt')
+DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/An Vat Via He')
+DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/An Vat Via He')
 
 # ======= Ngân hàng ========
 
 # DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/nganhang.txt')
-# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Ngan Hang')
-# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Ngan Hang')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Ngân Hàng')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Ngân Hàng')
 
 # ======= Bưu điện ========
 
-DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/buudien.txt')
-DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Buu Dien')
-DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Buu Dien')
+# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/buudien.txt')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Buu Dien')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Buu Dien')

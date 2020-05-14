@@ -17,6 +17,7 @@ from sklearn.metrics import confusion_matrix
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.neural_network import MLPClassifier
 
 class Classifier(object):
     def __init__(self, features_train = None, labels_train = None, features_test = None, labels_test = None, estimator=None):
@@ -81,3 +82,12 @@ if __name__ == '__main__':
     estLogistic.save_model(filePath='trained_model/logistic_model.pk') # save Model
     print('Training by Logistic_Classifier Done !')
     
+
+    # MLPClassifier
+
+    # print('Training by MLPClassifier ...')
+
+    # MLPClassifier = Classifier(features_train=features_train, features_test=features_test, labels_train=labels_train, labels_test=labels_test,estimator=MLPClassifier(max_iter=30, verbose=True))
+    # MLPClassifier.training()
+    # MLPClassifier.save_model(filePath='trained_model/mlpclassifier_model.pk')
+    # print('Training by MLPClassifier Done !')
