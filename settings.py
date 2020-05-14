@@ -10,7 +10,7 @@ VECTOR_EMBEDDING = os.path.join(DIR_PATH, 'vector_embedding/vector_embedding_ful
 STOP_WORDS = os.path.join(DIR_PATH, 'stopwords-nlp-vi.txt')
 SPECIAL_CHARACTER = '0123456789%@$.,=+-!;/()*"&^:#|\n\t\''
 DICTIONARY_PATH = 'dictionary.txt'
-TOKEN = 'f68f98d802ba6c0a60ee9dc44c47f48c'
+TOKEN = 'YOUR_TOKEN'
 
 # ======= KHACH SAN =======
 # DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/khachsan.txt')
