@@ -39,10 +39,11 @@ def findCoordinatePlace(place):
     try:
         if 'đường' in place:
             place = place.replace('đường', '')
-        print(place)
-        data_json = requests.get('https://api.viettelmaps.com.vn:8080/gateway/searching/v1/place-api/geocoding?address='+place+'&access_token=f68f98d802ba6c0a60ee9dc44c47f48c').json()
-        coordinates = ','.join(str(e) for e in data_json['data']['geometry']['coordinates'][::-1])
-        return str(coordinates)
+        data_json = requests.get(
+            'https://api.viettelmaps.com.vn:8080/gateway/placeapi/v2/place-api/geocode?address='+place+'&key='+settings.TOKEN).json()
+        coordinates = list(data_json['results'][0]
+                           ['geometry']['location'].values())[::-1]
+        return coordinates
     except:
         return COORDINATE_DEFAULT
 
@@ -53,7 +54,8 @@ if __name__ == '__main__':
     while(1):
         print("==="*5)
         data = input("Nhap ky tu: ")
-        classifier = pickle.load(open('trained_model/logistic_model.pk', 'rb'))
+        classifier = pickle.load(
+            open('trained_model/logistic_model.pk', 'rb'))
 
         # tf-idf
         vectorizer = pickle.load(open(settings.VECTOR_EMBEDDING, 'rb'))
@@ -61,15 +63,32 @@ if __name__ == '__main__':
         data_features.append(' '.join(NLP(text=data).remove_stopwords()))
         features = vectorizer.transform(data_features)
 
-        # predict
+        # # predict
+        # if (max(classifier.predict_proba(features)[0]) < settings.THRESHOLD):
+        #     """
+        #         continue
+        #     """
+        #     print("Không thuộc class nào")
+        #     continue
+
         text_category = classifier.predict(features)[0]
-        print("===" *5)
+        print("===" * 5)
         print("\n Loại địa điểm cần tìm: {}".format(text_category))
 
         name_geography = ' '.join(str(e) for e in selectPlaceByNer(data))
         coordinates = findCoordinatePlace(name_geography)
         print("\n Địa điểm: {}".format(name_geography))
         print("\n Tọa độ: {}".format(coordinates))
-        places = requests.get('https://api.viettelmaps.com.vn:8080/gateway/searching/v1/place-api/autocomplete?input=' +
-                            text_category+'&center='+coordinates+'&access_token='+settings.TOKEN).json()
-        print("\n {}".format(places))
+
+        url = "https://api.viettelmaps.vn/gateway/searching/v1/search/geojson/address?access_token=6ht5fdbc-1996-4f54-87gf-5664f304f3d2"
+        headers = {
+            'Content-Type': 'application/json'
+        }
+        payload = {"limit": "10", "offset": "0", "sortByDistance": "true",
+                   "query": "", "proximity": "", "mode": "search_result"}
+        payload['query'] = text_category
+        payload['proximity'] = coordinates
+        print(payload)
+        response = requests.post(url, headers=headers,
+                                 data=json.dumps(payload))
+        print("\n {}".format(response.text))
