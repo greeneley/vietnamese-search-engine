@@ -1,5 +1,6 @@
 # Vietnamese-Text-Classification
 Vietnamese Text Classification
+Fill in the fields to see the markdown badge snippet.
 
 ## 1. Mục tiêu:
 

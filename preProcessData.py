@@ -101,6 +101,7 @@ def get_feature_dict(value_features, value_labels):
 
 
 if __name__ == '__main__':
+    
     print('Reading data raw... '),  str(datetime.now())
     json_train = DataLoader(dataPath=settings.DATA_TRAIN_PATH).get_json()
     json_test = DataLoader(dataPath=settings.DATA_TEST_PATH).get_json()
