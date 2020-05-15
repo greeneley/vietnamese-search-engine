@@ -35,7 +35,7 @@ def selectPlaceByNer(list):
 
 
 def findCoordinatePlace(place):
-    COORDINATE_DEFAULT = '16.059664953500032,108.21168188005686'
+    COORDINATE_DEFAULT = [108.21168188005686, 16.059664953500032]
     try:
         if 'đường' in place:
             place = place.replace('đường', '')
@@ -63,13 +63,13 @@ if __name__ == '__main__':
         data_features.append(' '.join(NLP(text=data).remove_stopwords()))
         features = vectorizer.transform(data_features)
 
-        # # predict
-        # if (max(classifier.predict_proba(features)[0]) < settings.THRESHOLD):
-        #     """
-        #         continue
-        #     """
-        #     print("Không thuộc class nào")
-        #     continue
+        # predict
+        if (max(classifier.predict_proba(features)[0]) < settings.THRESHOLD):
+            """
+                continue
+            """
+            print("Không thuộc class nào")
+            continue
 
         text_category = classifier.predict(features)[0]
         print("===" * 5)
@@ -88,7 +88,7 @@ if __name__ == '__main__':
                    "query": "", "proximity": "", "mode": "search_result"}
         payload['query'] = text_category
         payload['proximity'] = coordinates
-        print(payload)
+        # print(payload)
         response = requests.post(url, headers=headers,
                                  data=json.dumps(payload))
         print("\n {}".format(response.text))
