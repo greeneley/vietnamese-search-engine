@@ -76,18 +76,17 @@ if __name__ == '__main__':
     # print('Training by RandomForest Classifier Done ! ')
 
     # Logistic_Classifier        
-    print('Training by Logistic_Classifier ...')
-    estLogistic = Classifier(features_train=features_train, features_test=features_test, labels_train=labels_train, labels_test=labels_test,estimator=LogisticRegression(penalty='l2',max_iter=20,C=30))
-    estLogistic.training()
-    estLogistic.save_model(filePath='trained_model/logistic_model.pk') # save Model
-    print('Training by Logistic_Classifier Done !')
+    # print('Training by Logistic_Classifier ...')
+    # estLogistic = Classifier(features_train=features_train, features_test=features_test, labels_train=labels_train, labels_test=labels_test,estimator=LogisticRegression(penalty='l2',max_iter=20,C=30))
+    # estLogistic.training()
+    # estLogistic.save_model(filePath='trained_model/logistic_model.pk') # save Model
+    # print('Training by Logistic_Classifier Done !')
     
 
     # MLPClassifier
 
-    # print('Training by MLPClassifier ...')
-
-    # MLPClassifier = Classifier(features_train=features_train, features_test=features_test, labels_train=labels_train, labels_test=labels_test,estimator=MLPClassifier(max_iter=30, verbose=True))
-    # MLPClassifier.training()
-    # MLPClassifier.save_model(filePath='trained_model/mlpclassifier_model.pk')
-    # print('Training by MLPClassifier Done !')
+    print('Training by MLPClassifier ...')
+    MLPClassifier = Classifier(features_train=features_train, features_test=features_test, labels_train=labels_train, labels_test=labels_test,estimator=MLPClassifier(max_iter=20, verbose=True))
+    MLPClassifier.training()
+    MLPClassifier.save_model(filePath='trained_model/mlpclassifier_model.pk')
+    print('Training by MLPClassifier Done !')

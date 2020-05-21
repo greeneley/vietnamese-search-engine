@@ -43,9 +43,9 @@ THRESHOLD = 0.7
 
 # ======= Ăn vặt, vỉa hè ========
 
-DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/raw/anvat.txt')
-DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/An Vat Via He')
-DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/An Vat Via He')
+# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/raw/anvat.txt')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/An Vat Via He')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/An Vat Via He')
 
 # ======= Ngân hàng ========
 
@@ -58,3 +58,58 @@ DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/An Vat Via He')
 # DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/raw/buudien.txt')
 # DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Buu Dien')
 # DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Buu Dien')
+
+# # ======= Tòa nhà  ========
+
+# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/raw/toanha.txt')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Tòa Nhà')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Tòa Nhà')
+
+# ======= Chung cư  ========
+
+# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/raw/chungcu.txt')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Chung cư')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Chung cư')
+
+# # ======= Nhà thờ  ========
+
+# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/raw/nhatho.txt')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Nhà Thờ')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Nhà Thờ')
+
+# # ======= Nghĩa trang  ========
+
+# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/raw/nghiatrang.txt')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Nghĩa Trang')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Nghĩa Trang')
+
+# # ======= Đài Tưởng Niệm Liệt Sĩ  ========
+
+# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/raw/lietsy.txt')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Đài Tưởng Niệm Liệt Sĩ')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Đài Tưởng Niệm Liệt Sĩ')
+
+# # ======= Rừng Quốc Gia  ========
+
+# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/raw/rungquocgia.txt')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Rừng Quốc Gia')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Rừng Quốc Gia')
+
+
+# ======= Chùa  ========
+
+# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/raw/chua.txt')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Chùa')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Chùa')
+
+# # ======= Khu bảo tồn  ========
+
+# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/raw/khubaoton.txt')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Khu Bảo Tồn')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Khu Bảo Tồn')
+
+# ======= Khu du lich  ========
+
+DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/raw/khudulich.txt')
+DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Khu Du Lịch')
+DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Khu Du Lịch')
