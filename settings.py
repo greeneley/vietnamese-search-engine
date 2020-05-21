@@ -110,6 +110,46 @@ THRESHOLD = 0.7
 
 # ======= Khu du lich  ========
 
-DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/raw/khudulich.txt')
-DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Khu Du Lịch')
-DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Khu Du Lịch')
+# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/raw/khudulich.txt')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Khu Du Lịch')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Khu Du Lịch')
+
+
+# # ======= Điểm đỗ xe  ========
+
+# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/raw/diemdauxe.txt')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Điểm Đỗ Xe')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Điểm Đỗ Xe')
+
+# # ======= Showroom oto  ========
+
+# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/raw/showroom.txt')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/showroom ô tô')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/showroom ô tô')
+
+
+# # ======= Dịch Vụ Thuê Xe  ========
+
+# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/raw/dichvuthuexe.txt')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Dịch Vụ Thuê Xe')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Dịch Vụ Thuê Xe')
+
+# # ======= Tiệm Rửa Sửa Xe  ========
+
+# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/raw/tiemruasuaxe.txt')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Tiệm Rửa Sửa Xe')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Tiệm Rửa Sửa Xe')
+
+
+# # ======= Garage  ========
+
+# DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/raw/garage.txt')
+# DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Garage')
+# DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Garage')
+
+
+# ======= Garage  ========
+
+DATA_SPLIT_PATH = os.path.join(DIR_PATH, 'data/raw/tramxang.txt')
+DATA_TRAIN_LABEL = os.path.join(DIR_PATH, './data/Viettel/train/Trạm Xăng')
+DATA_TEST_LABEL = os.path.join(DIR_PATH, './data/Viettel/test/Trạm Xăng')

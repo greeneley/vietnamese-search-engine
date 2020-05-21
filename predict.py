@@ -55,7 +55,7 @@ if __name__ == '__main__':
         print("==="*5)
         data = input("Nhap ky tu: ")
         classifier = pickle.load(
-            open('trained_model/logistic_model.pk', 'rb'))
+            open('trained_model/mlpclassifier_model.pk', 'rb'))
 
         # tf-idf
         vectorizer = pickle.load(open(settings.VECTOR_EMBEDDING, 'rb'))
