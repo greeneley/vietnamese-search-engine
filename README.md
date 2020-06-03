@@ -1,5 +1,6 @@
 # Vietnamese-Text-Classification
-Vietnamese Text Classification
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/greeneley/Vietnamese_Search_Engine.git/developer?filepath=predictAPI.ipynb)
 
 ## 1. Mục tiêu:
 

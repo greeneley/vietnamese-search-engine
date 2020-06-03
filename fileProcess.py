@@ -4,12 +4,14 @@ import pickle
 import os
 from random import randint
 
+
 class DataLoader(object):
     def __init__(self, dataPath):
         self.dataPath = dataPath
 
     def __get_files(self):
-        folders = [self.dataPath + folder + '/' for folder in os.listdir(self.dataPath)]
+        folders = [self.dataPath + folder +
+                   '/' for folder in os.listdir(self.dataPath)]
         class_titles = os.listdir(self.dataPath)
         files = {}
         for folder, title in zip(folders, class_titles):
@@ -20,11 +22,6 @@ class DataLoader(object):
         self.__get_files()
         data = []
         for topic in self.files:
-            # rand = randint(2000, 5000)
-            # rand =100
-            # i = 0
-            # rand = randint(100, 150)
-            # i = 0
             for file in self.files[topic]:
                 print(file)
                 content = FileReader(filePath=file).content()
@@ -32,14 +29,11 @@ class DataLoader(object):
                     'category': topic,
                     'content': content
                 })
-                # if i == rand:
-                #     break
-                # else:
-                #     i += 1
         return data
 
+
 class FileReader(object):
-    def __init__(self, filePath, encoder = None):
+    def __init__(self, filePath, encoder=None):
         self.filePath = filePath
         self.encoder = encoder if encoder != None else 'utf-16le'
 
@@ -52,6 +46,7 @@ class FileReader(object):
         s = self.read()
         # return s.decode(self.encoder)
         return s
+
     def read_json(self):
         with open(self.filePath) as f:
             s = json.load(f)
@@ -59,14 +54,16 @@ class FileReader(object):
 
     def read_stopwords(self):
         with open(self.filePath, 'r') as f:
-            stopwords = set([w.strip().replace(' ', '_') for w in f.readlines()])
+            stopwords = set([w.strip().replace(' ', '_')
+                             for w in f.readlines()])
         return stopwords
 
     def load_dictionary(self):
         return corpora.Dictionary.load_from_text(self.filePath)
 
+
 class FileStore(object):
-    def __init__(self, filePath, data = None):
+    def __init__(self, filePath, data=None):
         self.filePath = filePath
         self.data = data
 
