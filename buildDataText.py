@@ -24,17 +24,9 @@ class FileStore(object):
         self.filePath = filePath
         self.data = data
 
-    def store_file_train(self, list):
-        # with open(self.filePath, 'w') as a:
-        #     a.write(list)
+    def StoreTextUnit(self, list):
         for index, value in enumerate(list):
             name_file = self.filePath + '/NH_(' + str(index) + ').txt'
-            with open(name_file, 'w') as output:
-                output.write(value)
-
-    def store_file_text(self, list):
-        for index, value in enumerate(list):
-            name_file = self.filePath + '/NH_T_(' + str(index) + ').txt'
             with open(name_file, 'w') as output:
                 output.write(value)
 
@@ -49,5 +41,5 @@ if __name__ == '__main__':
     test_files = glob.glob(settings.DATA_TEST_LABEL + '/*')
     for f in test_files:
         os.remove(f)
-    FileStore(filePath=settings.DATA_TRAIN_LABEL).store_file_train(X_train)
-    FileStore(filePath=settings.DATA_TEST_LABEL).store_file_train(X_test)
+    FileStore(filePath=settings.DATA_TRAIN_LABEL).StoreTextUnit(X_train)
+    FileStore(filePath=settings.DATA_TEST_LABEL).StoreTextUnit(X_test)

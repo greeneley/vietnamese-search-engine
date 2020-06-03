@@ -6,17 +6,11 @@ from datetime import datetime
 from fileProcess import FileReader, FileStore 
 from preProcessData import FeatureExtraction
 import numpy as np
-import itertools
-
-import matplotlib.pyplot as plt
 import pickle as pickle
 from gensim import corpora, matutils
-from sklearn.svm import LinearSVC
 from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
-from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.neighbors import KNeighborsClassifier
 from sklearn.neural_network import MLPClassifier
 
 class Classifier(object):
@@ -54,27 +48,6 @@ if __name__ == '__main__':
     features_test, labels_test = FeatureExtraction(data=features_test_loader).read_feature()
     print('Read Feature Extraction Done! ',  str(datetime.now()))
 
-    # # KNeighbors Classifier
-    # print('Training by KNeighbors Classifier ...')
-    # estKNeighbors = Classifier(features_train=features_train, features_test=features_test, labels_train=labels_train, labels_test=labels_test,estimator=KNeighborsClassifier(n_neighbors=3))
-    # estKNeighbors.training()
-    # estKNeighbors.save_model(filePath='trained_model/knn_model_tfidf.pk') # save Model
-    # print('Training by KNeighbors Classifier Done !')
-    
-    # # SVM Classifier 
-    # print('Training by SVM Classifier ...')
-    # estSVM = Classifier(features_train=features_train, features_test=features_test, labels_train=labels_train, labels_test=labels_test,estimator= LinearSVC(penalty='l2', C= 4))
-    # estSVM.training()
-    # estSVM.save_model(filePath='trained_model/svm_model.pk') # save Model
-    # print('Training by SVM Classifier Done !')
-
-    # # RandomForest Classifier
-    # print('Training by RandomForest Classifier ...')
-    # estRandomForest = Classifier(features_train=features_train, features_test=features_test, labels_train=labels_train, labels_test=labels_test,estimator=RandomForestClassifier())
-    # estRandomForest.training()
-    # estRandomForest.save_model(filePath='trained_model/random_forest_model.pk') # save Model
-    # print('Training by RandomForest Classifier Done ! ')
-
     # Logistic_Classifier        
     # print('Training by Logistic_Classifier ...')
     # estLogistic = Classifier(features_train=features_train, features_test=features_test, labels_train=labels_train, labels_test=labels_test,estimator=LogisticRegression(penalty='l2',max_iter=20,C=30))
@@ -82,9 +55,7 @@ if __name__ == '__main__':
     # estLogistic.save_model(filePath='trained_model/logistic_model.pk') # save Model
     # print('Training by Logistic_Classifier Done !')
     
-
     # MLPClassifier
-
     print('Training by MLPClassifier ...')
     MLPClassifier = Classifier(features_train=features_train, features_test=features_test, labels_train=labels_train, labels_test=labels_test,estimator=MLPClassifier(max_iter=20, verbose=True))
     MLPClassifier.training()
