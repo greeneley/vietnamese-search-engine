@@ -15,11 +15,7 @@
   * Phần 1: Dự đoán nội dung nhập vào là loại địa điểm gì. Hiện tại, Viettel Maps có 8 loại địa điểm: **Nhà Hàng**, **Khách sạn**, **Quán cafe**, **ATM**, **Siêu thị**, **Ăn vặt, vỉa hè**, **Ngân hàng**, **Bưu điện** (ngoài ra, trong CSDL Postgresql còn có thêm 8 loại khác như sân bay, etc. nhưng ta chưa cần xét các loại đó trong này). 
   * Phần 2: Chuyển đổi tên địa điểm, địa danh riêng thành lat, long.
 
-Sau đó truyền 2 tham số: ***Loại địa điểm*** và **lat,long** vào API Autocomplete (đã có sẵn trong public API Viettel Maps) như sau:
-
-```python
-'https://api.viettelmaps.com.vn:8080/gateway/searching/v1/place-api/autocomplete?input='+Loại địa điểm+'&center='+lat,long+'&access_token=YOUR_TOKEN_VALUE'
-```
+Sau đó truyền 2 tham số: ***Loại địa điểm*** và **lat,long** vào API Autocomplete (đã có sẵn trong public API):
 
 ## 3. Điều kiện đảm bảo đầu vào và đầu ra:
 
@@ -63,7 +59,7 @@ Hiện tại mới build 2 nhãn: **Nhà Hàng** và **Khách sạn**.
   - [x] Bưu điên
 - [x] Tiến hành build lại dựa trên data bổ sung.
 - [x] Clean data train. 
-- [x] Thực hiện phần 2. Phần này chỉ thực hiện 1 bước là phân loại từ loại của câu rồi trích loại "danh từ riêng". Ví dụ: "Tìm quán ăn ở Lê Đình Lý, Đà Nẵng" thì cụm từ "Lê Đình Lý, Đà Nẵng" là cụm danh từ riêng. Trích xuất cụm này rồi bỏ vào 1 API public của Viettel Maps sẽ nhận được tọa độ tâm lat,long. Còn nếu không có tên riêng gì trong text nhập vào thì mặc định là lat,long của người sử dụng.
+- [x] Thực hiện phần 2. Phần này chỉ thực hiện 1 bước là phân loại từ loại của câu rồi trích loại "danh từ riêng". Ví dụ: "Tìm quán ăn ở Lê Đình Lý, Đà Nẵng" thì cụm từ "Lê Đình Lý, Đà Nẵng" là cụm danh từ riêng. Trích xuất cụm này rồi bỏ vào 1 API public sẽ nhận được tọa độ tâm lat,long. Còn nếu không có tên riêng gì trong text nhập vào thì mặc định là lat,long của người sử dụng.
 
 
 ## 7. Build:
@@ -78,21 +74,3 @@ python predict.py -i <filename document>
 ### BUILD DATA
 
 -- WORKING --
-
-## 8. Kết quả:
-
-```C
-              precision    recall  f1-score   support
-
-         ATM       1.00      0.99      1.00       364
-    Buu Dien       0.99      0.99      0.99       642
-   Khach San       0.88      1.00      0.93       435
-   Ngan Hang       1.00      0.99      0.99      1552
-    Nha Hang       0.99      0.95      0.97       184
- Quan Ca Phe       1.00      0.99      0.99       254
-    Sieu Thi       1.00      0.94      0.97       654
-
-   micro avg       0.98      0.98      0.98      4085
-   macro avg       0.98      0.98      0.98      4085
-weighted avg       0.98      0.98      0.98      4085
-```
